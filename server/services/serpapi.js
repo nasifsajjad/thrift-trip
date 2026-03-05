@@ -18,7 +18,7 @@ function extractNightlyRate(hotel) {
 async function searchFlights({ origin, destination, departureDate, returnDate, adults = 1, currency = 'USD' }) {
   const params = new URLSearchParams({
     engine: 'google_flights',
-    type: '2',
+    type: '1',
     departure_id: origin,
     arrival_id: destination,
     outbound_date: departureDate,

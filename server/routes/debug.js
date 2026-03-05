@@ -18,7 +18,7 @@ router.get('/flight', async (req, res) => {
 
   const params = new URLSearchParams({
     engine: 'google_flights',
-    type: '2',
+    type: '1',
     departure_id: from,
     arrival_id: to,
     outbound_date: outDate,
