@@ -76,11 +76,11 @@ async function searchCheapestFlightsFromOrigin({ origin, windowStart, windowEnd,
 
   const destinations = getPopularDestinations();
   const results = [];
-  const TARGET = 8;
+  const TARGET = 5;
 
   for (const dest of destinations) {
     if (results.length >= TARGET) break;
-    await sleep(400); // Avoid rate limiting — search sequentially
+    await sleep(150); // Avoid rate limiting — search sequentially
 
     try {
       const flight = await searchFlights({

@@ -27,7 +27,7 @@ export function useSearchResults() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ origin, windowStart, windowEnd, stayDays, travelers, currency }),
         // Short timeout so we fall back to demo mode quickly if server is down
-        signal: AbortSignal.timeout(8000),
+        signal: AbortSignal.timeout(60000),
       });
 
       if (!res.ok) {

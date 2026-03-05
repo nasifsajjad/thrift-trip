@@ -50,7 +50,7 @@ export default function ResultsSection({ trips, loading, error, hasSearched, onR
           <div className="loading-status">
             <div className="loading-status__text">
               <span className="loading-dot" />
-              Scanning flights worldwide and pairing with hotels…
+              Scanning flights & hotels worldwide — this takes up to 30 seconds…
             </div>
           </div>
           <div className="skeleton-grid">
