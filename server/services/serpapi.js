@@ -89,7 +89,7 @@ async function searchCheapestFlightsFromOrigin({ origin, windowStart, windowEnd,
         departureDate: pair.departure,
         returnDate: pair.return,
         adults,
-        currency,
+        currency: 'USD',
       });
 
       if (flight) {

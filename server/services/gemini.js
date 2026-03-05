@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-const GEMINI_API_BASE = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
+const GEMINI_API_BASE = 'generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent';
 
 /**
  * Get estimated daily activity and food costs for a destination using Gemini.
